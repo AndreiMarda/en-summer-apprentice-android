@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:title="Events"
+    android:id="@+id/menu">
+
+    <item
+        android:title="Search"
+        android:id="@+id/menu_search"
+        android:icon="@drawable/baseline_search_24"
+        android:iconTint="@color/black"
+        app:showAsAction="ifRoom|collapseActionView"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"/>
+
+    <item
+        android:id="@+id/menu_home"
+        android:title="Home"
+        android:icon="@drawable/baseline_home_24"
+        android:iconTint="@color/black"
+        app:showAsAction="ifRoom|collapseActionView"/>
+
+    <item
+        android:id="@+id/menu_sort"
+        android:title="Sort"
+        android:icon="@drawable/baseline_sort_24"
+        android:iconTint="@color/black"
+        app:showAsAction="ifRoom|collapseActionView"/>
+    <item
+        android:id="@+id/exit"
+        android:title="Exit"
+        android:icon="@drawable/baseline_exit_to_app_24"
+        android:iconTint="@color/black"
+        app:showAsAction="ifRoom|collapseActionView"/>
+</menu>

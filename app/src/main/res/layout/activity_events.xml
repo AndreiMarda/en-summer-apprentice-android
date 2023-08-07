@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/water">
+<!--    <include layout="@layout/toolbar_events"/>-->
+
+    <androidx.cardview.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardBackgroundColor="#000000"
+        card_view:cardElevation="4dp"/>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#00000000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/untold"
+                android:id="@+id/untoldImage"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+            </ImageView>
+            <TextView
+                android:id="@+id/textCard1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="200dp"
+                android:text="Untold"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+            </TextView>
+
+            <RadioGroup
+                android:id="@+id/radioGroupUntold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="20dp"
+                app:layout_constraintEnd_toStartOf="@+id/buttonCard1"
+                app:layout_constraintStart_toEndOf="@+id/untoldImage"
+                app:layout_constraintTop_toTopOf="@+id/textCard1"
+                android:layout_marginTop="30dp">
+
+                <RadioButton
+                    android:id="@+id/radioStandardUntold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Standard"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+                    app:layout_constraintStart_toEndOf="@+id/untoldImage"
+                    tools:layout_editor_absoluteY="136dp">
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/radioVIPUntold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="VIP"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+                    app:layout_constraintEnd_toEndOf="@+id/radioStandard"
+                    app:layout_constraintTop_toBottomOf="@+id/radioStandard">
+                </RadioButton>
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/buttonCard1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="152dp"
+                android:layout_marginEnd="10dp"
+                android:background="#00000000"
+                android:text="Buy Ticket"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </Button>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.cardview.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardBackgroundColor="#000000"
+        card_view:cardElevation="4dp"/>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#00000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/ec"
+            android:id="@+id/ecImage"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+        </ImageView>
+        <RadioGroup
+            android:id="@+id/radioGroupEC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="20dp"
+            app:layout_constraintEnd_toStartOf="@+id/buttonCard2"
+            app:layout_constraintStart_toEndOf="@+id/ecImage"
+            app:layout_constraintTop_toTopOf="@+id/textCard2"
+            android:layout_marginTop="30dp">
+
+            <RadioButton
+                android:id="@+id/radioStandardEC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Standard"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                app:layout_constraintStart_toEndOf="@+id/ecImage"
+                tools:layout_editor_absoluteY="136dp"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/radioVIPEC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VIP"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                app:layout_constraintEnd_toEndOf="@+id/radioStandardEC"
+                app:layout_constraintTop_toBottomOf="@+id/radioStandardEC">
+            </RadioButton>
+        </RadioGroup>
+        <TextView
+            android:id="@+id/textCard2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="200dp"
+            android:text="Electric Castle"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+        </TextView>
+
+        <Button
+            android:id="@+id/buttonCard2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="136dp"
+            android:layout_marginEnd="10dp"
+            android:background="#00000000"
+            android:text="Buy Ticket"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.981"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+        </Button>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.cardview.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardBackgroundColor="#000000"
+        card_view:cardElevation="4dp"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/wine"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/wine"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+        </ImageView>
+
+        <RadioGroup
+            android:id="@+id/radioGroupWine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="20dp"
+            app:layout_constraintEnd_toStartOf="@+id/buttonCard3"
+            app:layout_constraintStart_toEndOf="@+id/wine"
+            app:layout_constraintTop_toTopOf="@+id/textCard3"
+            android:layout_marginTop="30dp">
+
+            <RadioButton
+                android:id="@+id/radioStandardWine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Standard"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                app:layout_constraintStart_toEndOf="@+id/wine"
+                tools:layout_editor_absoluteY="136dp"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/radioVIPWine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VIP"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                app:layout_constraintEnd_toEndOf="@+id/radioStandardWine"
+                app:layout_constraintTop_toBottomOf="@+id/radioStandardWine">
+            </RadioButton>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textCard3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="200dp"
+            android:text="Wine Festival"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </TextView>
+
+        <Button
+            android:id="@+id/buttonCard3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="136dp"
+            android:layout_marginEnd="10dp"
+            android:background="#00000000"
+            android:text="Buy Ticket"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.981"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:cornerRadius="20dp">
+
+        </Button>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.cardview.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardBackgroundColor="#000000"
+        card_view:cardElevation="4dp"/>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#00000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/ball"
+            android:id="@+id/ballImage"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+        </ImageView>
+
+        <RadioGroup
+            android:id="@+id/radioGroupFootball"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="20dp"
+            app:layout_constraintEnd_toStartOf="@+id/buttonCard4"
+            app:layout_constraintStart_toEndOf="@+id/ballImage"
+            app:layout_constraintTop_toTopOf="@+id/textCard4"
+            android:layout_marginTop="30dp">
+
+            <RadioButton
+                android:id="@+id/radioStandardFootball"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Standard"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                app:layout_constraintStart_toEndOf="@+id/ballImage"
+                tools:layout_editor_absoluteY="136dp">
+
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/radioVIPFootball"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VIP"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                app:layout_constraintEnd_toEndOf="@+id/radioStandardFootball"
+                app:layout_constraintTop_toBottomOf="@+id/radioStandardFootball">
+            </RadioButton>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textCard4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="200dp"
+            android:text="Football Match"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+        </TextView>
+        <Button
+            android:id="@+id/buttonCard4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="136dp"
+            android:layout_marginEnd="10dp"
+            android:background="#00000000"
+            android:text="Buy Ticket"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.981"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+        </Button>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
