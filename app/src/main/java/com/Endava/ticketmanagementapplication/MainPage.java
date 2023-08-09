@@ -20,7 +20,6 @@ public class MainPage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
         eventsButton = findViewById(R.id.eventsButton);
         eventsButton.setOnClickListener(new View.OnClickListener() {
             @Override
